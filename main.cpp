@@ -31,7 +31,7 @@ int main(int argc, char** argv)
 {
 	int unsigned_file_size;
 	int signed_file_size;
-	if (argc < 2)
+	if (argc < 3)
 	{
 		printf("First Argument: unsigned file | Second Argument: signed file | Third Argument: final signed file path");
 		return 0;
