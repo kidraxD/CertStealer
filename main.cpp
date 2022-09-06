@@ -20,10 +20,7 @@ PVOID read_file_by_name(LPCSTR file_path, int* size)
 
 exit:
 	CloseHandle(h_dll);
-	if (dll_buffer)
-	{
-		return dll_buffer;
-	}
+	return dll_buffer;
 	
 }
 
