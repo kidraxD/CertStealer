@@ -15,10 +15,7 @@ PVOID read_file_by_name(LPCSTR file_path, int* size)
 	if (!ReadFile(h_dll, dll_buffer, dll_file_sz, NULL, FALSE) || *(PDWORD)dll_buffer != 9460301)
 	{
 		VirtualFree(dll_buffer, 0, MEM_RELEASE);
-		goto exit;
 	}
-
-exit:
 	CloseHandle(h_dll);
 	return dll_buffer;
 	
